@@ -1,6 +1,7 @@
 name: CI and Deploy to Azure
 
 on:
+  workflow_dispatch:  # Enables manual trigger from GitHub UI
   push:
     branches:
       - main
