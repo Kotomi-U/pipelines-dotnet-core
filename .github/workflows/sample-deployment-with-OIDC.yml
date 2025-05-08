@@ -34,6 +34,10 @@ jobs:
           name: build-artifact
           path: .
 
+      # f you're unsure where your build output goes, you can add a debug step
+      - name: List files
+        run: ls -R
+        
   deploy:
     runs-on: ubuntu-latest
     needs: build
